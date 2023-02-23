@@ -2,7 +2,7 @@
 
 namespace ApiCep\Controller;
 
-use App\Model\{ EnderecoModel, CidadeModel };
+use ApiCEP\Model\{ EnderecoModel, CidadeModel };
 use Exception;
 
 class EnderecoController extends Controller
