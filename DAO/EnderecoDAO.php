@@ -45,6 +45,8 @@ class EnderecoDAO extends DAO
         $stmt = $this->conexao->prepare($sql);
         $stmt->bindValue(1, $uf);
         $stmt->execute();
+
+        return $stmt->fetchAll(DAO::FETCH_CLASS);
     }
 
     public function selectBairrosByIdCidade(int $id_cidade)
